@@ -1,0 +1,19 @@
+* Je suis visiteur
+
++ je peux voir la liste des news - ok
++ je peux m'authentifier - ok
++ je peux lire les articles complets - x
+
+- je ne peux pas gérér les news - ok
+- je ne peux pas gérér les catégories - ok
+- je ne peux pas gérér les utilisateurs - ok
+
+
+* Je suis utilisateur authentifié
+
++ je peux gérér les news - ok
++ je peux gérér les catégories - ok
++ je peux gérér les utilisateurs - ok
++ je peux lire les articles complets- ok
++ je peux me déconnecter - ok
+

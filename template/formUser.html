@@ -1,0 +1,36 @@
+<div class="container">
+  <form class="needs-validation" novalidate method="POST" action="index.php?controller=user&action={action}" enctype="multipart/form-data">
+
+    <div class="col-md-10 mb-1">
+      <label for="id" class="font-weight-bold">ID</label>
+      <input type="text" class="form-control" id="id" name="id" value="{id}" readonly >
+    </div>
+
+    <div class="col-md-10 mb-1">
+      <label for="username" class="font-weight-bold">Username</label>
+      <input type="text" class="form-control" id="username" name="username" value="{username}">
+    </div>
+
+    <div class="col-md-10 mb-1">
+      <label for="photo" class="font-weight-bold">Photo</label>
+      <input type="file" class="form-control-file" id="photo" name="photo" aria-describedby="nom" placeholder="Photo">		
+    </div>
+
+    <div class="col-md-10 mb-1">
+      <label for="password" class="font-weight-bold">Password</label>
+      <input type="text" class="form-control" id="password" name="password" value="{password}">
+    </div>
+    <div class="col-md-10 mb-1">
+      <label for="nom" class="font-weight-bold">Nom</label>
+      <input type="text" class="form-control" id="nom" name="nom" value="{nom}">
+    </div>
+    <div class="col-md-10 mb-1">
+      <label for="prenom" class="font-weight-bold">Prénom</label>
+      <input type="text" class="form-control" id="prenom" name="prenom" value="{prenom}">
+    </div>
+
+    <button class="btn btn-success ml-3 mt-3 mb-5" type="submit">Valider</button>
+    <a type="button" href="index.php?controller=user" class="btn btn-danger ml-3 mt-3 mb-5">Retour</a>
+  </form>
+
+</div>

@@ -1,0 +1,24 @@
+<div class="container">
+  <h3>Ajouter une catégorie</h3>
+  <form class="needs-validation" novalidate method="POST" action="index.php?controller=category&action={action}" enctype="multipart/form-data">
+
+    <div class="col-md-10 mb-1">
+      <label for="id">ID</label>
+      <input type="text" class="form-control" id="id" name="id" value="{id}" readonly >
+    </div>
+
+    <div class="col-md-10 mb-1">
+      <label for="nom">Titre</label>
+      <input type="text" class="form-control" id="nom" name="nom" value="{nom}">
+    </div>
+
+    <div class="col-md-10 mb-1">
+      <label for="descrip">Description</label>
+      <input type="text" class="form-control" id="descrip" name="descrip" value="{descrip}">
+    </div>
+
+    <button class="btn btn-success ml-3 mt-3 mb-5" type="submit">Valider</button>
+    <a type="button" href="index.php?controller=category" class="btn btn-danger ml-3 mt-3 mb-5">Retour</a>
+  </form>
+
+</div>

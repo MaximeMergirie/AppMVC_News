@@ -1,0 +1,34 @@
+<div class="container">
+  <form class="needs-validation" novalidate method="POST" action="index.php?controller=new&action={action}" enctype="multipart/form-data">
+
+    <div class="col-md-10 mb-1">
+      <label for="id" class="font-weight-bold">ID</label>
+      <input type="text" class="form-control" id="id" name="id" value="{id}" readonly >
+    </div>
+
+    <div class="col-md-10 mb-1">
+      <label for="titre" class="font-weight-bold">Titre</label>
+      <input type="text" class="form-control" id="titre" name="titre" value="{titre}">
+    </div>
+
+    <div class="col-md-10 mb-1">
+      <label for="photo" class="font-weight-bold">Photo</label>
+      <input type="file" class="form-control-file" id="photo" name="photo" aria-describedby="nom" placeholder="Photo">		
+    </div>
+
+    <div class="col-md-10 mb-1">
+      <label for="descrip" class="font-weight-bold">Description</label>
+      <textarea id="descrip" class="form-control"  name="descrip" cols="30" rows="10">{descrip}</textarea>
+    </div>
+    <div class="col-md-10 mb-1">
+      <label for="categorie" class="font-weight-bold">Catégorie</label>
+      <select name="categorie" id="categorie" class="form-control">
+        <option></option>
+        {categorie}</select>
+    </div>
+
+    <button class="btn btn-success ml-3 mt-3 mb-5" type="submit">Valider</button>
+    <a type="button" href="index.php?controller=new" class="btn btn-danger ml-3 mt-3 mb-5">Retour</a>
+  </form>
+
+</div>
